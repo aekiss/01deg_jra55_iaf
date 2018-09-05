@@ -27,7 +27,7 @@ submodels:
       model: cice5
       exe: /short/public/access-om2/bin/cice_auscom_3600x2700_1392p_076b14f2.exe
       input: /short/public/access-om2/input_38570c62/cice_01deg
-      ncpus: 1385
+      ncpus: 1600
 
 # Collation
 collate: true
@@ -65,4 +65,4 @@ qsub_flags: -lother=hyperthread -W umask=027
 #    nodesize: 28
 mpi:
     module: openmpi/1.10.2
-postscript: sync_output_to_gdata.sh
+# postscript: sync_output_to_gdata.sh
