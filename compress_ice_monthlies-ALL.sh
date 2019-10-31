@@ -12,16 +12,14 @@ case $yesno in
 esac
 
 for d in archive/output???/ice/OUTPUT; do
-    for f in $d/iceh.????-??.nc; do
-        if [[ ! -f ${f/.nc/-COMPRESS-IN-PROGRESS} ]];
+    f=$d/iceh.????-??.nc
+    if [[ ! -f $d/COMPRESS-IN-PROGRESS ]];
         then
             echo "Submitting $f"
-            qsub -P v45 -q copyq -l ncpus=1 -l walltime=00:30:00,mem=2GB -l wd -V -N compress_ice_monthlies -- ./compress_ice_monthlies.sh $f && touch ${f/.nc/-COMPRESS-IN-PROGRESS}
+            qsub -P v45 -q copyq -l ncpus=1 -l walltime=05:00:00,mem=32GB -l wd -V -N compress_ice_monthlies -- ./compress_ice_monthlies.sh $f && touch $d/COMPRESS-IN-PROGRESS
         else
             echo "--- Skipping $f"
         fi
-        # break
-    done
-    # break
+#    break
 done
 
