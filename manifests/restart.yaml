@@ -938,8 +938,8 @@ work/ocean/INPUT/ocean_sbc.res.nc.0024:
 work/ocean/INPUT/ocean_solo.res:
   fullpath: /scratch/x77/aek156/access-om2/archive/01deg_jra55v13_iaf_4hourly/restart379/ocean/ocean_solo.res
   hashes:
-    binhash: 790502fe893f1a291ad6638275854a54
-    md5: 166869daf7319fda8894cb8b8a2b27ef
+    binhash: 3860f927f5bbeae25d856c28ad68d323
+    md5: 75028f71b801719fb2cdde93487d326c
 work/ocean/INPUT/ocean_temp_salt.res.nc.0000:
   fullpath: /scratch/x77/aek156/access-om2/archive/01deg_jra55v13_iaf_4hourly/restart379/ocean/ocean_temp_salt.res.nc.0000
   hashes:
